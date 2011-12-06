@@ -1,0 +1,8 @@
+The purpose of this script is to back up information from a number of 
+applications on my computer (Address Book, iTunes, etc.) in an automated
+fashion, and in such a way that the list of backups can easily be extended
+in the future if need be.
+
+TODO:
+Refactor the large portions of the *_backup functions that are in common into a helper function if possible
+After all of the calls to doActionWithApp are completed, move all of the "_backup_" files from the Desktop to the expected backup folder (conditionally check them into SVN... at which point the files do not need to be datestamped); pop up an alert dialog if this backup folder cannot be found.
